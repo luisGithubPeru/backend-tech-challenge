@@ -29,16 +29,14 @@ The server should expose the following independent operations:
 - Get the total amount in a basket
 - Remove the basket
 
-The server must support concurrent invocations of those operations: any of them may be invoked at any time, while other operations are still being performed, even for the same basket.
-
 The client must connect user input with those operations via the protocol exposed by the server.
 
-We don't have any DBAs at Cabify, so the service shouldn't use any external databases of any kind.
+We don't have any DBAs at Cabify, so the service shouldn't use any external databases of any kind. ;)
 
 **You will need to implement:**
 
 - A checkout service
-- A checkout client that fulfills these requirements
+
 
 Examples:
 
@@ -53,6 +51,8 @@ Examples:
 
     Items: VOUCHER, TSHIRT, VOUCHER, VOUCHER, MUG, TSHIRT, TSHIRT
     Total: 74.50€
+
+- A testing suite for the implementes functionalities
 
 **The code should:**
 - Build and execute in a Unix operating system.
