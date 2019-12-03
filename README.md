@@ -55,7 +55,6 @@ Examples:
 - A testing suite for the implementes functionalities
 
 **The code should:**
-- Build and execute in a Unix operating system.
 - Be written as production-ready code. You will write production code.
 - Be easy to grow and easy to add new functionality.
 - Have notes attached, explaining the solution and why certain things are included and others are left out.
