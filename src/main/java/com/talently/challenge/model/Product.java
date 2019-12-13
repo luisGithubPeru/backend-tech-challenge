@@ -2,11 +2,22 @@ package com.talently.challenge.model;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Product {
 
+	@Id
+	@GeneratedValue
+	private long id;
 	private ProductCode code;
 	private String name;
 	private BigDecimal price;
+
+	private Product() {
+	}
 
 	public Product(ProductCode code) {
 		super();
